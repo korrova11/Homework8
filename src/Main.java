@@ -94,11 +94,13 @@ public class Main {
         whites[1] = 2;
         whites[2] = 3;
         for (int index = 0; index < whites.length; index++) {
-            whites[index] += 1;
+            if ((whites[index] % 2) != 0) {
+                whites[index] += 1;
+            }
         }
-        System.out.println(Arrays.toString(whites));
+            System.out.println(Arrays.toString(whites));
+
 
 
     }
 }
-
